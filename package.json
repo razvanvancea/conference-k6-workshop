@@ -1,0 +1,18 @@
+{
+  "name": "ntc-k6-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx prettier --write .",
+      "test:basic": "k6 run 01-basic-test/script.js",
+    "test:stages": "k6 run 02-stages-thresholds/script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "prettier": "^3.8.1"
+  }
+}
