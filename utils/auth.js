@@ -3,7 +3,7 @@ import { BASE_URL } from './config.js';
 import { debugResponse } from './helpers.js';
 
 export function getAuthTokenToken(email, psw) {
-    const payload = JSON.stringify({
+  const payload = JSON.stringify({
     email: email,
     password: psw,
   });
