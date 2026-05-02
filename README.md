@@ -48,19 +48,7 @@ cd conference-k6-workshop
 npm install
 ```
 
-<<<<<<< HEAD
-#### VII. Run a simple k6 test
-In the workshop repository folder, run:
-```
-npm run sanity:test
-```
-This command runs a simple k6 test to verify that everything is working correctly.
-
-
-### VIII. Visual Studio Code (IDE)
-=======
 ### VII. Visual Studio Code (IDE)
->>>>>>> ef6d4b1 (wip)
 
 Download and install Visual Studio Code from: https://code.visualstudio.com/download
 
