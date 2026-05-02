@@ -2,7 +2,7 @@
 
 ## Prerequisites Setup Guide
 
-This guide will help you prepare your environment before the workshop so you can start coding right away.
+Please complete these steps before the workshop so you can follow the hands-on exercises.
 
 **Please follow the steps below to install the required tools.** If you already have something installed, you can skip that section.
 
@@ -26,41 +26,56 @@ Install the k6 load testing tool:
 - **macOS / Linux**: Follow the installation steps at https://grafana.com/docs/k6/latest/set-up/install-k6/
 
 
-### IV. API Application Repository
+### IV. Verify your setup
+Run the following commands:
+```
+node -v
+npm -v
+git --version
+k6 version
+```
+Each command should return a version number.
+
+### V. API Application Repository
 
 Clone the API application that will be used during the workshop exercises:
 
 ```bash
 git clone https://github.com/razvanvancea/crud-api-express-books-rv.git
-npm install
 cd crud-api-express-books-rv
+npm install
 npm run start
 ```
 
-After running above commands, you should be able to see the Swagger documentation of the application in the browser http://localhost:3001/api-docs
+After running the above commands, you should be able to see the Swagger documentation of the application in the browser http://localhost:3001/api-docs
 
-### IV. Workshop Repository
+### VI. Workshop Repository
 
 Clone the workshop repository and install npm packages. This will be used to create exercises during the session.
-
-the last command will run a simple test to check that your setup is complete.
 
 ```bash
 git clone https://github.com/razvanvancea/conference-k6-workshop
 cd conference-k6-workshop
 npm install
-npm run sanity:test
 ```
 
+#### VII. Run a simple k6 test
+In the workshop repository folder, run:
+```
+npm run sanity:test
+```
+This command runs a simple k6 test to verify that everything is working correctly.
 
-### VII. Visual Studio Code (IDE)
+
+### VIII. Visual Studio Code (IDE)
 
 Download and install Visual Studio Code from: https://code.visualstudio.com/download
 
 
 ### IX. Optional: Docker
+⚠️ Docker is optional and not required for the workshop exercises.
 
-If you want to run Docker containers during the workshop, install Docker from: https://www.docker.com/products/docker-desktop
+However, if you want to run Docker containers during the workshop, install Docker from: https://www.docker.com/products/docker-desktop
 
 ---
 
