@@ -99,3 +99,9 @@ To ensure a smooth experience, you'll need:
 
 The API application used during the workshop exercises is available here:
 https://github.com/razvanvancea/crud-api-express-books-rv
+
+### ❗ If something doesn’t work
+
+- Don’t worry — you can still follow the workshop  
+- You can pair with another participant  
+- I will help troubleshoot during the session  
