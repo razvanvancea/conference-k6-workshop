@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "format": "npx prettier --write .",
-      "test:basic": "k6 run 01-basic-test/script.js",
-    "test:stages": "k6 run 02-stages-thresholds/script.js"
+    "format": "npx oxfmt",
+    "sanity:test": "k6 run sanity-test.js",
+    "test:basic": "k6 run 01-basic-test/script.js",
+    "test:stages": "k6 run 02-stages-thresholds/script.js",
+    "debug": "k6 run scripts/1-basic-test.js --http-debug=full"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "prettier": "^3.8.1"
+    "@types/k6": "^1.7.0",
+    "oxfmt": "^0.47.0"
   }
 }

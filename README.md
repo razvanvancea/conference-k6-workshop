@@ -25,18 +25,7 @@ Install the k6 load testing tool:
 - **Windows**: Download the k6 .exe installer from https://dl.k6.io/msi/k6-latest-amd64.msi
 - **macOS / Linux**: Follow the installation steps at https://grafana.com/docs/k6/latest/set-up/install-k6/
 
-
-### IV. Verify your setup
-Run the following commands:
-```
-node -v
-npm -v
-git --version
-k6 version
-```
-Each command should return a version number.
-
-### V. API Application Repository
+### IV. API Application Repository
 
 Clone the API application that will be used during the workshop exercises:
 
@@ -59,6 +48,7 @@ cd conference-k6-workshop
 npm install
 ```
 
+<<<<<<< HEAD
 #### VII. Run a simple k6 test
 In the workshop repository folder, run:
 ```
@@ -68,9 +58,11 @@ This command runs a simple k6 test to verify that everything is working correctl
 
 
 ### VIII. Visual Studio Code (IDE)
+=======
+### VII. Visual Studio Code (IDE)
+>>>>>>> ef6d4b1 (wip)
 
 Download and install Visual Studio Code from: https://code.visualstudio.com/download
-
 
 ### IX. Optional: Docker
 ⚠️ Docker is optional and not required for the workshop exercises.
@@ -81,14 +73,16 @@ However, if you want to run Docker containers during the workshop, install Docke
 
 ## ⚠️ Important Notice
 
-**Please use a personal laptop without corporate network or security restrictions.** 
+**Please use a personal laptop without corporate network or security restrictions.**
 
 During the workshop, we will:
+
 - Install packages and tools locally
 - Run code and tests on your machine
 - Download dependencies from the internet
 
 To ensure a smooth experience, you'll need:
+
 - ✅ Active internet connection
 - ✅ Admin/installation permissions
 - ✅ No corporate network restrictions or proxies

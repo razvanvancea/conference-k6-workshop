@@ -1,2 +1,3 @@
 node_modules
 docker/grafana/influxdb_data
+.DS_Store

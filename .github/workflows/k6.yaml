@@ -1,0 +1,32 @@
+name: k6 Load Tests
+
+on:
+  #   push:
+  #     branches: [main]
+  #   pull_request:
+  #     branches: [main]
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'
+  # schedule:
+  # * is a special character in YAML so you have to quote this string
+  # - cron: "0 18 * * 1"
+
+jobs:
+  run-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup K6
+        uses: grafana/setup-k6-action@v1
+      - name: Run local k6 test
+        uses: grafana/run-k6-action@v1
+        with:
+          path: test.js
