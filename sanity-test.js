@@ -1,5 +1,3 @@
-// TODO: Create a simple GET request
-
 import http from 'k6/http';
 import { check } from 'k6';
 
