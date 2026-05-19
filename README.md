@@ -52,6 +52,11 @@ npm install
 
 Download and install Visual Studio Code from: https://code.visualstudio.com/download
 
+### VIII. k6 Studio
+Download and install [k6 Studio](https://grafana.com/docs/k6/latest/k6-studio/) from: https://github.com/grafana/k6-studio/releases
+Note: for Windows OS, download the k6.Studio-1.13.1.Setup.exe file
+Note: for MacOS, download the 
+
 ### IX. Optional: Docker
 ⚠️ Docker is optional and not required for the workshop exercises.
 
