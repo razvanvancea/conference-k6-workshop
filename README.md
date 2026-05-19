@@ -38,7 +38,7 @@ npm run start
 
 After running the above commands, you should be able to see the Swagger documentation of the application in the browser http://localhost:3001/api-docs
 
-### VI. Workshop Repository
+### V. Workshop Repository
 
 Clone the workshop repository and install npm packages. This will be used to create exercises during the session.
 
@@ -48,16 +48,16 @@ cd conference-k6-workshop
 npm install
 ```
 
-### VII. Visual Studio Code (IDE)
+### VI. Visual Studio Code (IDE)
 
 Download and install Visual Studio Code from: https://code.visualstudio.com/download
 
-### VIII. k6 Studio
+### VII. k6 Studio
 Download and install [k6 Studio](https://grafana.com/docs/k6/latest/k6-studio/) from: https://github.com/grafana/k6-studio/releases
-Note: for Windows OS, download the k6.Studio-1.13.1.Setup.exe file
-Note: for MacOS, download the 
 
-### IX. Optional: Docker
+Note: for Windows OS, download the k6.Studio-1.13.1.Setup.exe file
+
+### VIII. Optional: Docker
 ⚠️ Docker is optional and not required for the workshop exercises.
 
 However, if you want to run Docker containers during the workshop, install Docker from: https://www.docker.com/products/docker-desktop
