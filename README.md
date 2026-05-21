@@ -25,9 +25,9 @@ Install the k6 load testing tool:
 - **Windows**: Download the k6 .exe installer from https://dl.k6.io/msi/k6-latest-amd64.msi
 - **macOS / Linux**: Follow the installation steps at https://grafana.com/docs/k6/latest/set-up/install-k6/
 
-### IV. API Application Repository
+### IV. Demo API playground Books application repository
 
-Clone the API application that will be used during the workshop exercises:
+Clone the Books playground API application that will be used during the workshop exercises:
 
 ```bash
 git clone https://github.com/razvanvancea/crud-api-express-books-rv.git
