@@ -1,10 +1,12 @@
 # k6 Load Testing Workshop
 
-## Prerequisites Setup Guide
+## 📋 Overview
 
-Please complete these steps before the workshop so you can follow the hands-on exercises.
+Welcome! This comprehensive guide will help you set up your environment before the workshop begins.
 
-**Please follow the steps below to install the required tools.** If you already have something installed, you can skip that section.
+Please complete the prerequisites steps **before the workshop** to fully participate in the hands-on exercises.
+
+> **💡 Tip:** If you already have some of the tools installed, you can skip those sections.
 
 ---
 
@@ -87,8 +89,27 @@ To ensure a smooth experience, you'll need:
 The API application used during the workshop exercises is available here:
 https://github.com/razvanvancea/crud-api-express-books-rv
 
-### ❗ If something doesn’t work
 
-- Don’t worry — you can still follow the workshop  
-- You can pair with another participant  
-- I will help troubleshoot during the session  
+## 💡 Optional (Nice to Have)
+
+Not required, but helpful to have some basic knowledge about:
+
+- 📘 JavaScript fundamentals
+
+---
+
+## ❗ If Something Doesn't Work
+
+Don't worry! Here are your options:
+
+- 🙋 You can still follow the workshop
+- 👥 You can pair with another participant
+- 🆘 I will help troubleshoot during the session
+
+---
+
+## 🙌 Ready to Go?
+
+Looking forward to seeing you at the workshop! If you have any questions before we start, feel free to reach out.
+
+**Let's build amazing tests together!** ✨
