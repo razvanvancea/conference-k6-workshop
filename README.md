@@ -66,27 +66,31 @@ However, if you want to run Docker containers during the workshop, install Docke
 
 ---
 
-## ⚠️ Important Notice
 
-**Please use a personal laptop without corporate network or security restrictions.**
+## ⚠️ Important Requirements
+
+### System Requirements
+
+Please use a **personal laptop without corporate network or security restrictions**.
 
 During the workshop, we will:
 
-- Install packages and tools locally
-- Run code and tests on your machine
-- Download dependencies from the internet
+- 📦 Install packages and tools locally
+- 🧪 Run code and tests on your machine
+- 💻 Execute commands in terminal
 
-To ensure a smooth experience, you'll need:
+To ensure everything works smoothly, you will need:
 
-- ✅ Active internet connection
-- ✅ Admin/installation permissions
-- ✅ No corporate network restrictions or proxies
+- ✅ **Active internet connection**
+- ✅ **Permission to install software**
+- ✅ **No corporate proxies/firewalls blocking tools**
 
 ---
 
+
 ## Demo Application
 
-The API application used during the workshop exercises is available here:
+The demo Books API playground application used during the workshop exercises is available here:
 https://github.com/razvanvancea/crud-api-express-books-rv
 
 
