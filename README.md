@@ -55,17 +55,18 @@ npm install
 Download and install Visual Studio Code from: https://code.visualstudio.com/download
 
 ### VII. k6 Studio
+
 Download and install [k6 Studio](https://grafana.com/docs/k6/latest/k6-studio/) from: https://github.com/grafana/k6-studio/releases
 
 Note: for Windows OS, download the k6.Studio-1.13.1.Setup.exe file
 
 ### VIII. Optional: Docker
+
 ⚠️ Docker is optional and not required for the workshop exercises.
 
 However, if you want to run Docker containers during the workshop, install Docker from: https://www.docker.com/products/docker-desktop
 
 ---
-
 
 ## ⚠️ Important Requirements
 
@@ -87,12 +88,10 @@ To ensure everything works smoothly, you will need:
 
 ---
 
-
 ## Demo Application
 
 The demo Books API playground application used during the workshop exercises is available here:
 https://github.com/razvanvancea/crud-api-express-books-rv
-
 
 ## 💡 Optional (Nice to Have)
 
