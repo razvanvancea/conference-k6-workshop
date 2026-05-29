@@ -99,6 +99,7 @@ https://github.com/razvanvancea/crud-api-express-books-rv
 Not required, but helpful to have some basic knowledge about:
 
 - 📘 JavaScript fundamentals
+- 📘 General understanding of REST APIs, including HTTP methods, status codes, headers, and JSON request/response bodies.
 
 ---
 
