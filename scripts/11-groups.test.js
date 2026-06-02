@@ -1,22 +1,22 @@
 /**
-11.1 
+11.1 create groups for the following endpoints:
+- GET /books
+- GET /books/1
+- GET /books/random-failure
+- OPTIONAL - POST /books using random title
+- OPTIONAL - DELETE /books/:id (create a book and then delete it in the same group; you can create a helper function that creates a book and returns its id to be used in the DELETE endpoint)
+
+11.2 create Trend objects (constants) and use them to measure the response time of each of the above endpoints and add the corresponding .add(res.timings.duration) calls in each group
+11.3 add randomSleep between 1 and 2 seconds at the end of each group
+11.4 OPTIONAL: add errorHandler.logError() calls in each group to log any failed checks
 */
-import { Trend } from 'k6/metrics';
 import { randomSleep } from '../utils/random-utils.js';
 import http from 'k6/http';
-import { check, sleep } from 'k6';
+import { check, sleep, group } from 'k6';
 import { getAuthToken } from '../utils/jwt-auth.js';
 import { BASE_URL } from '../utils/config.js';
 
-import { htmlReport } from 'https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js';
-import { textSummary } from 'https://jslib.k6.io/k6-summary/0.1.0/index.js';
-
-export function handleSummary(data) {
-  return {
-    'result.html': htmlReport(data),
-    stdout: textSummary(data, { indent: ' ', enableColors: true }),
-  };
-}
+import { Trend } from 'k6/metrics';
 
 export const options = {
   stages: [
@@ -29,19 +29,22 @@ export const options = {
   },
 };
 
-export default function () {
-  const res = http.get(`${BASE_URL}/books`);
-  const responseData = res.json();
-  //   console.log(res.body);
-  //   console.log(responseData);
-  //   console.log(res);
+// create Trend objects for each group endpoint
 
-  check(res, {
-    'get books status is 200': (r) => r.status === 200,
-    'get books response body contains 3 items': (r) => r.json().length === 3,
-    'get books response body contains "The Great Gatsby"': (r) =>
-      r.json().some((book) => book.title === 'The Great Gatsby'),
+export default function () {
+  group('get all books', () => {
+    const res = http.get(`${BASE_URL}/books`);
+    const responseData = res.json();
+
+    check(res, {
+      'get all books status is 200': (r) => r.status === 200,
+    });
+
+    API_GET_ALL_BOOKS.add(res.timings.duration);
+    randomSleep(1, 2);
   });
 
-  randomSleep(1, 2);
+  group('get single book by id', () => {});
+
+  group('get books-random failure endpoint', () => {});
 }

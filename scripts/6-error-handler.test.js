@@ -1,8 +1,8 @@
 /**
+6.0 Refactor the code to use the imported BASE_URL constant from the ../utils/config.js file (already imported in this file)
 6.1 run the tests in full debug mode
 6.2 implement the errorHandler utility function in the utils folder and use it to log the response details when a check fails
 6.3 use the debugResponse helper function (already imported in this file) to log the response details
-6.4 Refactor the code to use the BASE_URL from the config file (already imported in this file)
 */
 
 import { randomSleep } from '../utils/random-utils.js';
@@ -21,12 +21,10 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get(`${BASE_URL}/books`);
+  const res = http.get(`${BASE_URL}/books/random-failure`);
 
   check(res, {
-    'get books status is 200': (r) => r.status === 204,
-    'get books response body contains "The Great Gatsby"': (r) =>
-      r.json().some((book) => book.title === 'Great Gatsby'),
+    'get books status is 200': (r) => r.status === 200,
   });
 
   randomSleep(1, 2);
