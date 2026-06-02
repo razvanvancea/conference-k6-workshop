@@ -1,5 +1,5 @@
 /**
-8.1 Refactor the following code to create a new book using the POST /books endpoint. Include the 'Content-Type': 'application/json' header in the request and send a JSON body with the book details (e.g. title and author).
+8.1 Refactor the following code to create a new book using the POST /books endpoint. Include the 'Content-Type': 'application/json' header in the request and send a JSON body with the book details (e.g. 'title' and 'author').
 8.2 Use the 'randomString' function (already imported in this file) to generate a random title for the book. 
 8.3 Check that the response status is 201 and that the response body contains the created book with the correct title.
 8.4 run "npm run format" to format the code
