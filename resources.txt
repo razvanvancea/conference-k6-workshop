@@ -1,5 +1,7 @@
 workshop live source code: https://tinyurl.com/k6-code
+OpenAPI books demo app: http://localhost:3001/api-docs
 
+===
 k6 official docs: https://grafana.com/docs/k6/latest/
 random strings: https://grafana.com/docs/k6/latest/javascript-api/jslib/utils/randomstring/
 random int between: https://grafana.com/docs/k6/latest/javascript-api/jslib/utils/randomintbetween/
@@ -7,3 +9,11 @@ expect assertion docs: https://grafana.com/docs/k6/latest/javascript-api/jslib/t
 learning resources docs: https://grafana.com/docs/k6/latest/get-started/resources/
 k6 studio docs: https://grafana.com/docs/k6/latest/k6-studio/
 k6 cloud docs: https://grafana.com/docs/k6/latest/grafana-cloud-k6/
+
+== docker + grafana setup ==
+1. starting the docker containers infrastructure: docker-compose up -d
+
+Grafana web dashboard URL: http://localhost:3000
+
+2. running the k6 script: docker-compose run k6 run /solutions/grafana/grafana-script.js
+3. shutting down the docker containers: docker compose down

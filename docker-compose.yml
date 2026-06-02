@@ -63,6 +63,8 @@ services:
       - K6_OUT=influxdb=http://influxdb:8086/k6
     volumes:
       - ./scripts:/scripts
+      - ./solutions:/solutions
+      - ./utils:/utils
 
   books-crud-api-app:
     image: rvancea/books-crud-api-app
