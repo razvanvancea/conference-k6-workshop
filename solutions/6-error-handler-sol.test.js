@@ -12,7 +12,7 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get(`${BASE_URL}/books`);
+  const res = http.get(`${BASE_URL}/books/random-failure`);
   const responseData = res.json();
   //   console.log(res.body);
   //   console.log(responseData);
@@ -21,8 +21,6 @@ export default function () {
 
   const checkResponseAsserts = check(res, {
     'get books status is 200': (r) => r.status === 200,
-    'get books response body contains "The Great Gatsby"': (r) =>
-      r.json().some((book) => book.title === 'The Great Gatsby'),
   });
   errorHandler.logError(!checkResponseAsserts, res);
 
