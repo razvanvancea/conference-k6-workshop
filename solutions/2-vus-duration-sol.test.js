@@ -2,7 +2,7 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 export const options = {
-  vus: 10,
+  vus: 5,
   duration: '15s',
 };
 
@@ -15,5 +15,3 @@ export default function () {
 
   sleep(1);
 }
-
-// k6 new k6-new-basic.test.js

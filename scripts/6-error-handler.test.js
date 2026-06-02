@@ -6,7 +6,7 @@
 6.5 Refactor the code to use the BASE_URL from the config file (already imported in this file)
 */
 
-import { randomIntBetween } from 'https://jslib.k6.io/k6-utils/1.0.0/index.js';
+import { randomSleep } from '../utils/random-utils.js';
 
 import http from 'k6/http';
 import { check, sleep } from 'k6';
@@ -30,5 +30,5 @@ export default function () {
       r.json().some((book) => book.title === 'Great Gatsby'),
   });
 
-  sleep(randomIntBetween(1, 2));
+  randomSleep(1, 2);
 }

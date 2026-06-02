@@ -1,3 +1,5 @@
+import { sleep } from 'k6';
+
 export const randomString = (length, charset = '') => {
   const len = Math.floor(length);
   if (!Number.isFinite(len) || len < 0) {
@@ -19,4 +21,8 @@ export const randomIntBetween = (min, max) => {
     throw new RangeError(`randomIntBetween: min must be <= max, got ${min} > ${max}`);
   }
   return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+export const randomSleep = (min = 1, max = 3) => {
+  sleep(randomIntBetween(min, max));
 };

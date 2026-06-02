@@ -12,3 +12,8 @@ export function checkStatus(res, expectedStatus) {
 
   return result;
 }
+
+export function debugResponse(res, label = 'Response') {
+  console.log(`${label} status: ${res.status}`);
+  console.log(`${label} body: ${res.body}`);
+}

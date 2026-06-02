@@ -6,12 +6,10 @@
   "scripts": {
     "format": "npx oxfmt",
     "sanity:test": "k6 run sanity-test.js",
-    "test:basic": "k6 run 01-basic-test/script.js",
-    "test:stages": "k6 run 02-stages-thresholds/script.js",
-    "debug": "k6 run scripts/1-basic-test.js --http-debug=full"
+    "debug": "k6 run solutions/1-basic-get-example-sol.test.js --http-debug=full"
   },
   "keywords": [],
-  "author": "",
+  "author": "Razvan Vancea",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {

@@ -1,5 +1,5 @@
 /**
-1.1 Create a simple GET /books test
+1.1 Create a simple GET http://localhost:3001/books test
 - check the response status code is 200
 - add hardcoded 1second sleep time
 1.2 Run the test once from CLI
@@ -9,4 +9,6 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
 
-export default function () {}
+export default function () {
+  // start typing here
+}

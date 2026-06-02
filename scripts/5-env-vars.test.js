@@ -5,6 +5,7 @@ Note: run the test from CLI passing the URL environment variable (e.g. k6 run -e
 
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { randomSleep } from '../utils/random-utils.js';
 
 const BASE_URL = 'http://localhost:3001';
 
@@ -16,5 +17,5 @@ export default function () {
     'status is 200': (r) => r.status === 200,
   });
 
-  sleep(1);
+  randomSleep(1, 2);
 }
