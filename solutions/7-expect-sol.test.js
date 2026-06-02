@@ -16,7 +16,6 @@ export default function () {
 
   expect.soft(res.status, 'status should be 200').toBe(200);
   expect.soft(responseData, 'response data should have length 3').toHaveLength(3);
-  expect.soft(responseData.some((book) => book.title === 'The Great Gatsby')).toBeTruthy();
 
   randomSleep(1, 2);
 }

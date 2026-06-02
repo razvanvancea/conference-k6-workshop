@@ -4,7 +4,7 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 import { BASE_URL } from '../utils/config.js';
-import { debugResponse } from '../utils/helpers.js';
+import { debugResponse } from '../utils/utils.js';
 
 export const options = {
   vus: 10,

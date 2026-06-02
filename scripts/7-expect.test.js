@@ -1,7 +1,6 @@
 /**
 7.1 Use expect library (already imported in this file) to soft assert status code 200
-7.2 Use expect library (already imported in this file) to soft assert response body contains "The Great Gatsby"
-7.3 Use expect library (already imported in this file) to soft assert response length is 3
+7.2 Use expect library (already imported in this file) to soft assert response length is 3
 */
 
 import { randomSleep } from '../utils/random-utils.js';

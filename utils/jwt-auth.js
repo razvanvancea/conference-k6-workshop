@@ -1,6 +1,6 @@
 import http from 'k6/http';
 import { BASE_URL } from './config.js';
-import { debugResponse } from './helpers.js';
+import { debugResponse } from './utils.js';
 
 export function getAuthToken(email, psw) {
   const payload = JSON.stringify({

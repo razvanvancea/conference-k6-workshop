@@ -17,6 +17,10 @@ export const options = {
 
 export default function () {
   const res = http.get(`${BASE_URL}/books`);
+  const responseData = res.json();
+  //   console.log(res.body);
+  //   console.log(responseData);
+  //   console.log(res);
 
   check(res, {
     'get books status is 200': (r) => r.status === 200,
