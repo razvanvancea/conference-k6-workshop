@@ -3,6 +3,7 @@ OpenAPI books demo app: http://localhost:3001/api-docs
 
 === Docs ===
 k6 official docs: https://grafana.com/docs/k6/latest/
+error handler: https://grafana.com/docs/k6/latest/examples/error-handler/
 VSCode intellisense for autocomplete: https://grafana.com/docs/k6/latest/set-up/configure-k6-intellisense/
 random strings: https://grafana.com/docs/k6/latest/javascript-api/jslib/utils/randomstring/
 random int between: https://grafana.com/docs/k6/latest/javascript-api/jslib/utils/randomintbetween/
