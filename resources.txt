@@ -18,3 +18,8 @@ Grafana web dashboard URL: http://localhost:3000
 
 2. running the k6 script: docker-compose run k6 run /solutions/grafana/grafana-script.js
 3. shutting down the docker containers: docker compose down
+
+=== k6 studio exercise ===
+homepage url: https://practicesoftwaretesting.com/
+product page url: https://practicesoftwaretesting.com/product/01KT64H181KDFK02RHF9KSR082
+category page url: https://practicesoftwaretesting.com/category/hand-tools
