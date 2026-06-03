@@ -6,7 +6,7 @@
 4.4 add check to verify that the response body contains 3 items
 4.5 add check to verify that the response body contains a book with title "The Great Gatsby"
 4.6 run "npm run format" to format the code
-4.7 run the tests using live web dashboard and analyze the results.html file (e.g. K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=results.html k6 run 3-stages-threshold.test.js)
+4.7 run the tests using live web dashboard and analyze the results.html file (e.g. K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=k6_html_results.html k6 run scripts/4-stages-threshold.test.js)
 4.8 Use the 'k6 new' command to create a new test file 'k6-new-basic.test.js' and analyze the new generated file
 */
 

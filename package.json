@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "format": "npx oxfmt",
-    "sanity:test": "k6 run sanity-test.js",
+    "test:web:dashboard": "K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=k6_html_results.html k6 run solutions/4-stages-threshold-sol.test.js",
+    "sanity": "k6 run sanity-test.js",
     "debug": "k6 run solutions/1-basic-get-example-sol.test.js --http-debug=full"
   },
   "keywords": [],

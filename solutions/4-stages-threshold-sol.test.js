@@ -33,3 +33,5 @@ export default function () {
 }
 
 // k6 new k6-new-basic.test.js
+
+// K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=results.html k6 run scripts/4-stages-threshold.test.js

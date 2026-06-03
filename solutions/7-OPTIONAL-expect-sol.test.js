@@ -14,6 +14,7 @@ export default function () {
   const res = http.get(`${BASE_URL}/books`);
   const responseData = res.json();
 
+  // expect.soft assertions
   expect.soft(res.status, 'status should be 200').toBe(200);
   expect.soft(responseData, 'response data should have length 3').toHaveLength(3);
 

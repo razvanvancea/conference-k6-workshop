@@ -3,3 +3,4 @@ docker/grafana/influxdb_data
 .DS_Store
 scripts/workshop-deo.test.js
 result.html
+k6_html_results.html

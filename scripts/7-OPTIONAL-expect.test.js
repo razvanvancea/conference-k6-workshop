@@ -18,5 +18,7 @@ export const options = {
 export default function () {
   const res = http.get(`${BASE_URL}/books`);
 
+  // TODO: add expect.soft assertions here
+
   randomSleep(1, 2);
 }

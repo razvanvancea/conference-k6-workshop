@@ -29,22 +29,18 @@ export const options = {
   },
 };
 
-// create Trend objects for each group endpoint
+// TODO: create Trend objects for each group endpoint
 
 export default function () {
   group('get all books', () => {
-    const res = http.get(`${BASE_URL}/books`);
-    const responseData = res.json();
-
-    check(res, {
-      'get all books status is 200': (r) => r.status === 200,
-    });
-
-    API_GET_ALL_BOOKS.add(res.timings.duration);
-    randomSleep(1, 2);
+    // TODO: GET /books endpoint implementation
   });
 
-  group('get single book by id', () => {});
+  group('get single book by id', () => {
+    // TODO: GET /books/1 endpoint implementation
+  });
 
-  group('get books-random failure endpoint', () => {});
+  group('get books-random failure endpoint', () => {
+    // TODO: GET /books/random-failure endpoint implementation
+  });
 }
