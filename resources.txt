@@ -11,6 +11,7 @@ learning resources docs: https://grafana.com/docs/k6/latest/get-started/resource
 k6 studio docs: https://grafana.com/docs/k6/latest/k6-studio/
 k6 cloud docs: https://grafana.com/docs/k6/latest/grafana-cloud-k6/
 k6 html reporter - https://github.com/benc-uk/k6-reporter
+k6 scenarios: https://grafana.com/docs/k6/latest/using-k6/scenarios/
 
 === docker + grafana setup ===
 1. starting the docker containers infrastructure: docker-compose up -d
