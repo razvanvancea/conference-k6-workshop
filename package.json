@@ -7,7 +7,9 @@
     "format": "npx oxfmt",
     "test:web:dashboard": "K6_WEB_DASHBOARD=true K6_WEB_DASHBOARD_EXPORT=k6_html_results.html k6 run solutions/4-stages-threshold-sol.test.js",
     "sanity": "k6 run sanity-test.js",
-    "debug": "k6 run solutions/1-basic-get-example-sol.test.js --http-debug=full"
+    "cloud:run": "K6_CLOUD_PROJECT_ID=7720794 k6 cloud run --local-execution solutions/11-groups-sol.test.js",
+    "debug": "k6 run solutions/1-basic-get-example-sol.test.js --http-debug=full",
+    "grafana:local:run": "docker-compose run k6 run /solutions/grafana/grafana-final.test.js"
   },
   "keywords": [],
   "author": "Razvan Vancea",

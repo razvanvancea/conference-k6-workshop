@@ -12,16 +12,41 @@ k6 studio docs: https://grafana.com/docs/k6/latest/k6-studio/
 k6 cloud docs: https://grafana.com/docs/k6/latest/grafana-cloud-k6/
 k6 html reporter - https://github.com/benc-uk/k6-reporter
 k6 scenarios: https://grafana.com/docs/k6/latest/using-k6/scenarios/
+grafana cloud: https://grafana.com/docs/grafana-cloud/testing/k6/author-run/use-the-cli/#running-tests-under-a-different-project-than-your-default-one
 
 === docker + grafana setup ===
 1. starting the docker containers infrastructure: docker-compose up -d
 
 Grafana web dashboard URL: http://localhost:3000
 
-2. running the k6 script: docker-compose run k6 run /solutions/grafana/grafana-script.js
+2. running the k6 script: docker-compose run k6 run /solutions/grafana/grafana-final.test.js
 3. shutting down the docker containers: docker compose down
 
 === k6 studio exercise ===
 homepage url: https://practicesoftwaretesting.com/
 product page url: https://practicesoftwaretesting.com/product/01KT64H181KDFK02RHF9KSR082
 category page url: https://practicesoftwaretesting.com/category/hand-tools
+
+
+== k6 cloud ==
+1. create free grafana account 
+https://grafana.com/auth/sign-in/
+
+2. login on your laptop using the above account
+k6 cloud login --token YOUR_TOKEN_FROM_PREVIOUS_STEP
+
+3. run a test directly in cloud 
+k6 cloud run solutions/grafana/jsonplaceholder.test.js
+
+4. run a test on your local environment and send the results to grafana cloud (this test uses localhost as application)
+k6 cloud run solutions/11-groups-sol.test.js
+
+5. remove any potential sensitive data from sending them to grafana cloud 
+export const options = {
+  cloud: {
+    deleteSensitiveData: true,
+  },
+};
+
+6. target a specific project id in grafana cloud
+K6_CLOUD_PROJECT_ID=PROJECT_ID k6 cloud run test.js

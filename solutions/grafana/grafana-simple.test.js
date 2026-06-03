@@ -25,6 +25,5 @@ export default function () {
 
   errorHandler.logError(!checkResponseAsserts, res);
 
-  //   sleep(randomIntBetween(1, 2));
   randomSleep(1, 2);
 }

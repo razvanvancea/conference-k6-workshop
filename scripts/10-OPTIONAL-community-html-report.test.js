@@ -10,7 +10,7 @@ import { check, sleep } from 'k6';
 import { getAuthToken } from '../utils/jwt-auth.js';
 import { BASE_URL } from '../utils/config.js';
 
-// TODO: add the nencessary imports for the HTML report HERE
+// TODO: add the necessary imports for the HTML report HERE
 
 // TODO: create the handleSummary function to generate the HTML report HERE
 

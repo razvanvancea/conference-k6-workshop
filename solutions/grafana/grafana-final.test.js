@@ -1,6 +1,3 @@
-/**
-11.1 
-*/
 import { randomSleep } from '../../utils/random-utils.js';
 import http from 'k6/http';
 import { check, sleep, group } from 'k6';
