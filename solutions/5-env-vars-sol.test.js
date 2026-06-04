@@ -15,4 +15,4 @@ export default function () {
   randomSleep(1, 2);
 }
 
-// from CLI run: k6 run -e URL=http://localhost:3001 scripts/5-env-vars.test.js
+// from CLI run: k6 run -e BASE_URL=http://localhost:3001 scripts/5-env-vars.test.js

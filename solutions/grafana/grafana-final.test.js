@@ -22,8 +22,14 @@ export const options = {
 const API_GET_BOOK_BY_ID = new Trend('duration_get_book_by_id');
 const API_GET_ALL_BOOKS = new Trend('duration_get_all_books');
 const API_GET_ALL_BOOKS_RANDOM_FAILURE = new Trend('duration_get_all_books_random_failure');
+const API_GET_PRIVATE_BOOKS = new Trend('duration_get_private_books');
 
-export default function () {
+export function setup() {
+  const jwt = getAuthToken('rv@tai.com', 'learnwithrv');
+  return { jwt };
+}
+
+export default function (data) {
   group('get all books', () => {
     const res = http.get(`${BASE_URL}/books`);
     const responseData = res.json();
@@ -60,4 +66,22 @@ export default function () {
     errorHandler.logError(!checkRandomFailureBookResp, res);
     randomSleep(1, 2);
   });
+
+  group('get private books', () => {
+    const jwt = data.jwt;
+    const privateBooksResponse = http.get(`${BASE_URL}/private/books`, {
+      headers: {
+        Authorization: `Bearer ${jwt}`,
+      },
+    });
+    const getPrivateBooksCheck = check(privateBooksResponse, {
+      'get private books status is 200': (r) => r.status === 200,
+    });
+
+    API_GET_PRIVATE_BOOKS.add(privateBooksResponse.timings.duration);
+    errorHandler.logError(!getPrivateBooksCheck, privateBooksResponse);
+    randomSleep(1, 2);
+  });
 }
+
+// docker-compose run k6 run -e BASE_URL=http://books-crud-api-app:3001 /solutions/grafana/grafana-final.test.js

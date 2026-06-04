@@ -4,4 +4,4 @@
 //   password: __ENV.PASSWORD || 'workshop123',
 // };
 
-export const BASE_URL = __ENV.BASE_URL || 'http://localhost:3001';
+export const BASE_URL = __ENV.BASE_URL || __ENV.URL || 'http://localhost:3001';
